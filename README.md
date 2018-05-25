@@ -1,5 +1,7 @@
 # Angular 1.x Authentication for Front End Masters
 
+https://github.com/chenkie/user-authentication-api
+
 ## Implementing Authentication Challenges
 
 * Complete the `onLoginSubmit` and `onSignupSubmit` methods to make `POST` requests (sending the user's credentials) to the `api/users/authenticate` and `api/users` endpoints respectively

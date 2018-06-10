@@ -1,27 +1,10 @@
 {
-  "name": "angular-boilerplate",
-  "version": "2.0.5",
-  "description": "Angular 1.5 in component way with best practices",
+  "name": "learn-jwt-with-angular1",
+  "version": "1.0.1",
   "scripts": {
     "build": "node ./env/build.js",
     "dev": "node ./env/dev-server.js"
   },
-  "author": "Meillet Robin",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kMeillet/angular-boilerplate.git"
-  },
-  "keywords": [
-    "angular1",
-    "angular",
-    "boilerplate",
-    "component"
-  ],
-  "bugs": {
-    "url": "https://github.com/kMeillet/angular-boilerplate/issues"
-  },
-  "homepage": "https://github.com/kMeillet/angular-boilerplate/#readme",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.7.4",

@@ -24,3 +24,8 @@ npm run dev
 ```
 
 The app will be served at `localhost:3002`.
+
+## Endpoint 
+
+https://user-authentication-api-ocokqryugz.now.sh
++ Make a Post request to `/api/users/authenticate/`

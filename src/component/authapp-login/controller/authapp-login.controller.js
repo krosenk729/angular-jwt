@@ -10,12 +10,15 @@ class AuthappLogin {
     // make a POST request to /users/authenticate
     // and call finishAuthentication if successful,
     // or display an error if unsuccessful
+    console.log(API_URL === '');
+    console.log(credentials);
   }
 
   onSignupSubmit(credentials) {
     // make a POST request to /users
     // and call finishAuthentication if successful,
     // or display an error if unsuccessful
+    console.log(credentials);
   }
 }
 

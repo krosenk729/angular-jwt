@@ -1,6 +1,6 @@
 class AuthService {
 
-  // creat a method to log the user out by 
+  // creat a method to log the user out by
   // removing the token from local storage
 
   // provide a function to save the JWT in local storage

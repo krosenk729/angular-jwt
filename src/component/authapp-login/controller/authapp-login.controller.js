@@ -15,7 +15,7 @@ class AuthappLogin {
             this.authService.finishAuth(response.data.token);
             this.login = {};
             this.authManager.authenticate();
-            this.$state.go('home');
+            this.$state.go('profile');
         }, err => {
             this.errorMessage = err.data.message;
         });

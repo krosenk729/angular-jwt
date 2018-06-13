@@ -23,9 +23,26 @@ Run the development version:
 npm run dev
 ```
 
-The app will be served at `localhost:3002`.
+The app will be served at `localhost:3000`.
+
+--------------------------
 
 ## Endpoint 
 
-https://user-authentication-api-ocokqryugz.now.sh
-+ Make a Post request to `/api/users/authenticate/`
+Source: https://github.com/chenkie/user-authentication-api
+
+Endpoint: https://user-authentication-api.now.sh
+
++ Make a POST request to `/api/users/authenticate` with `user` and `password` (response is JWT)
++ Make a POST request to `/api/users` with `username`, `email`, and `password` (response is JWT)
+
+--------------------------
+
+Step 1:
++ Create a screen for login and signup
++ Make a POST request with the user’s credentials
++ Store the JWT that comes back in local storage
++ Create a logout method which removes the token from local storage
++ Provide buttons for Log In and Log Out in the home view and the toolbar 
+
+

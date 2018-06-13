@@ -11,10 +11,10 @@
   <link href="./app.css" rel="stylesheet">
   <link rel="icon" href="./assets/favicon.ico"/>
   <style>
-    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak] {
-      display: none !important;
-    }
-  </style>
+  [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak] {
+    display: none !important;
+  }
+</style>
 </head>
 <body ng-cloak>
 
@@ -25,15 +25,21 @@
       </div>
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav pull-right">
+        <div class="nav navbar-nav pull-right">
           <!-- provide links for logging the user in and out. Note: call authManager.unauthenticate() in the logout process -->
-        </ul>      
+          <a ui-sref="login" class="btn">
+            Log In
+          </a>
+          <a ui-sref="login" class="btn" ng-click="authService.logout(); authManager.unauthenticate()" class="btn">
+            Log Out
+          </a>
+        </div>      
       </div>
     </div>
   </nav>
 
   <main class="ui-view container"></main>
 
-<script src="./app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>

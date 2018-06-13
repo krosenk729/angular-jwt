@@ -1,0 +1,5 @@
+node_modules/*
+**/vendor/*.js
+/templates/
+app-facade
+src

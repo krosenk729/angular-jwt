@@ -10,7 +10,7 @@ module.exports = {
     filename: '[name].js', // file name of build process
     publicPath: '', // don't touch this
   },
-  port: 3002, // port of server in development
+  port: 3000, // port of server in development
   base: './src/', // source to serv on dev server
   support: ['last 2 versions'], // autoprefixer vendor on CSS/Stylus files, support browsers
   forceReload: ['./src/index.html'], // force reload when edit index.html file

@@ -2,13 +2,6 @@
 
 https://github.com/chenkie/user-authentication-api
 
-## Implementing Authentication Challenges
-
-* Complete the `onLoginSubmit` and `onSignupSubmit` methods to make `POST` requests (sending the user's credentials) to the `api/users/authenticate` and `api/users` endpoints respectively
-* Provide a method in `auth.service.js` which saves the returned JWT in local storage
-* Create a `logout` method which removes the user's JWT from local storage
-* Provide buttons for **Log In** and **Log Out** in the home view and the toolbar
-
 ## Running the App
 
 Install the dependencies:
@@ -38,11 +31,23 @@ Endpoint: https://user-authentication-api.now.sh
 
 --------------------------
 
+## Implementing Authentication Challenges
+
+* Complete the `onLoginSubmit` and `onSignupSubmit` methods to make `POST` requests (sending the user's credentials) to the `api/users/authenticate` and `api/users` endpoints respectively
+* Provide a method in `auth.service.js` which saves the returned JWT in local storage
+* Create a `logout` method which removes the user's JWT from local storage
+* Provide buttons for **Log In** and **Log Out** in the home view and the toolbar
+
+
 Step 1:
 + Create a screen for login and signup
 + Make a POST request with the user’s credentials
 + Store the JWT that comes back in local storage
 + Create a logout method which removes the token from local storage
 + Provide buttons for Log In and Log Out in the home view and the toolbar 
+
+Step 2:
++ Create an `isAuthenticated` method in the `AuthService` which checks whether the user's JWT has expired (Hint: use angular2-jwt for this)
++ Conditionally hide and show the **Log In** and **Log Out** links based on whether the user's JWT is expired
 
 

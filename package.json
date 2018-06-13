@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "scripts": {
     "build": "node ./env/build.js",
-    "dev": "node ./env/dev-server.js"
+    "dev": "node ./env/dev-server.js",
+    "start": "npm run dev"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",

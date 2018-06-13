@@ -1,12 +1,11 @@
 class AuthService {
+    // isAuthenticated is part of jwt library
+    // https://www.npmjs.com/package/angular-jwt
 
-    // creat a method to log the user out by
-    // removing the token from local storage
     logout() {
         localStorage.removeItem('token');
     }
 
-    // provide a function to save the JWT in local storage
     finishAuth(token) {
         localStorage.setItem('token', token);
     }

@@ -11,11 +11,10 @@
       <li>Make requests for server resources that require a specific <code>scope</code> to be present in the JWT payload</li>
     </ul>
     
-    <!-- provide buttons for logging the user in and out. Note: call authManager.unauthenticate() in the logout process -->
-    <button ng-click="vm.$state.transitionTo('login')" class="btn">
+    <button ng-if="!vm.authManager.isAuthenticated()" ng-click="vm.$state.transitionTo('login')" class="btn">
       Log In
     </button>
-    <button ng-click="vm.authService.logout(); vm.authManager.unauthenticate()" class="btn">
+    <button ng-if="vm.authManager.isAuthenticated()" ng-click="vm.authService.logout(); vm.authManager.unauthenticate()" class="btn">
       Log Out
     </button>
   </div>

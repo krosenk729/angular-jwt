@@ -3,6 +3,7 @@ dist/
 .idea/
 node_modules/
 src/constant/config.js
+.env
 .DS_Store
 package-lock.json
 *.pdf

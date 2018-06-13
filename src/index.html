@@ -26,11 +26,10 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="nav navbar-nav pull-right">
-          <!-- provide links for logging the user in and out. Note: call authManager.unauthenticate() in the logout process -->
-          <a ui-sref="login" class="btn">
+          <a ng-if="!authManager.isAuthenticated()" ui-sref="login" class="btn">
             Log In
           </a>
-          <a ui-sref="login" class="btn" ng-click="authService.logout(); authManager.unauthenticate()" class="btn">
+          <a ng-if="authManager.isAuthenticated()" ui-sref="login" class="btn" ng-click="authService.logout(); authManager.unauthenticate()" class="btn">
             Log Out
           </a>
         </div>      

@@ -15,4 +15,14 @@ export default {
     url: '/profile',
     template: '<authapp-profile></authapp-profile>',
   },
+  instructor: {
+    name: 'instructor',
+    url: '/instructor',
+    template: '<authapp-instructor></authapp-instructor>',
+  },
+  newInstructor: {
+    name: 'new-instructor',
+    url: '/new-instructor',
+    template: '<authapp-new-instructor></authapp-new-instructor>',
+  },
 };

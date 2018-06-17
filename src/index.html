@@ -26,6 +26,8 @@
 
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <div class="nav navbar-nav pull-right">
+          <a ng-if="authManager.isAuthenticated()" ui-sref="instructor" class="btn">See Instructors</a>
+          <a ng-if="authManager.isAuthenticated()" ui-sref="profile" class="btn">Your Profile</a>
           <a ng-if="!authManager.isAuthenticated()" ui-sref="login" class="btn">
             Log In
           </a>

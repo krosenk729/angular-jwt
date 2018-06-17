@@ -14,6 +14,7 @@ export default {
     name: 'profile',
     url: '/profile',
     template: '<authapp-profile></authapp-profile>',
+    data: { requiresLogin: true }
   },
   instructor: {
     name: 'instructor',

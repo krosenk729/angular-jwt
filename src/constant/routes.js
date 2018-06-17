@@ -19,10 +19,12 @@ export default {
     name: 'instructor',
     url: '/instructor',
     template: '<authapp-instructor></authapp-instructor>',
+    data: { requiresLogin: true }
   },
   newInstructor: {
     name: 'new-instructor',
     url: '/new-instructor',
     template: '<authapp-new-instructor></authapp-new-instructor>',
+    data: { requiresLogin: true }
   },
 };
